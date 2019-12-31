@@ -30,8 +30,6 @@
 		271A97411CFC996B00D64125 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A97401CFC996B00D64125 /* UIViewController+Rx.swift */; };
 		271A97441CFC9F7B00D64125 /* UIViewController+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A97421CFC99FE00D64125 /* UIViewController+RxTests.swift */; };
 		4583D8231FE94BBA00AA1BB1 /* Recorded+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D8211FE94BB100AA1BB1 /* Recorded+Event.swift */; };
-		4613456F1D9A4467001ABAF2 /* UIWebView+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613456E1D9A4467001ABAF2 /* UIWebView+RxTests.swift */; };
-		461345711D9A4543001ABAF2 /* UIWebView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461345701D9A4543001ABAF2 /* UIWebView+Rx.swift */; };
 		4613457C1D9A4AEE001ABAF2 /* RxWebViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613457B1D9A4AEE001ABAF2 /* RxWebViewDelegateProxy.swift */; };
 		46307D4E1CDE77D800E47A1C /* UIAlertAction+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46307D4D1CDE77D800E47A1C /* UIAlertAction+Rx.swift */; };
 		4C8DE0E220D54545003E2D8A /* DisposeBagTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DE0E120D54545003E2D8A /* DisposeBagTest.swift */; };
@@ -918,8 +916,6 @@
 		271A97401CFC996B00D64125 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		271A97421CFC99FE00D64125 /* UIViewController+RxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+RxTests.swift"; sourceTree = "<group>"; };
 		4583D8211FE94BB100AA1BB1 /* Recorded+Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recorded+Event.swift"; sourceTree = "<group>"; };
-		4613456E1D9A4467001ABAF2 /* UIWebView+RxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+RxTests.swift"; sourceTree = "<group>"; };
-		461345701D9A4543001ABAF2 /* UIWebView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Rx.swift"; sourceTree = "<group>"; };
 		4613457B1D9A4AEE001ABAF2 /* RxWebViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWebViewDelegateProxy.swift; sourceTree = "<group>"; };
 		46307D4D1CDE77D800E47A1C /* UIAlertAction+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+Rx.swift"; sourceTree = "<group>"; };
 		4C8DE0E120D54545003E2D8A /* DisposeBagTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeBagTest.swift; sourceTree = "<group>"; };
@@ -1815,30 +1811,27 @@
 		C83508D81C38706D0027C24C /* RxCocoaTests */ = {
 			isa = PBXGroup;
 			children = (
-				C8D970DF1F532FD20058F2FE /* TestImplementations */,
-				C8561B651DFE1169005E97F1 /* ExampleTests.swift */,
-				C8D970DC1F532FD10058F2FE /* Signal+Test.swift */,
-				C8D970DD1F532FD10058F2FE /* SharedSequence+Test.swift */,
-				C8D970E11F532FD20058F2FE /* SharedSequence+Extensions.swift */,
-				C8D970DE1F532FD20058F2FE /* Driver+Test.swift */,
-				C8D970E21F532FD30058F2FE /* SharedSequence+OperatorTest.swift */,
-				C8091C521FAA3588001DB32A /* ObservableConvertibleType+SharedSequence.swift */,
+				C8A81CA51E05EAF70008DEF4 /* Binder+Tests.swift */,
 				C83508DD1C38706D0027C24C /* ControlEventTests.swift */,
 				C83508DE1C38706D0027C24C /* ControlPropertyTests.swift */,
 				C83508E11C38706D0027C24C /* DelegateProxyTest.swift */,
 				C83508DF1C38706D0027C24C /* DelegateProxyTest+Cocoa.swift */,
 				C83508E01C38706D0027C24C /* DelegateProxyTest+UIKit.swift */,
+				C8D970DE1F532FD20058F2FE /* Driver+Test.swift */,
+				C8561B651DFE1169005E97F1 /* ExampleTests.swift */,
+				6B9CA56D202A1F96002C2D11 /* KeyPathBinder+RxTests.swift */,
 				C83508E41C38706D0027C24C /* KVOObservableTests.swift */,
+				C83508E61C38706D0027C24C /* NotificationCenterTests.swift */,
 				C8C4F1761DE9D84900003FA7 /* NSButton+RxTests.swift */,
 				C834F6C51DB3950600C29244 /* NSControl+RxTests.swift */,
 				C83508E51C38706D0027C24C /* NSLayoutConstraint+RxTests.swift */,
-				C83508E61C38706D0027C24C /* NotificationCenterTests.swift */,
 				C83508E71C38706D0027C24C /* NSObject+RxTests.swift */,
 				C8C4F1741DE9D80A00003FA7 /* NSSlider+RxTests.swift */,
 				C8C4F1721DE9D7A300003FA7 /* NSTextField+RxTests.swift */,
 				927A78C82117BCB400A45638 /* NSTextView+RxTests.swift */,
 				C83508E81C38706D0027C24C /* NSView+RxTests.swift */,
 				C8A9B6F31DAD752200C9B027 /* Observable+BindTests.swift */,
+				C8091C521FAA3588001DB32A /* ObservableConvertibleType+SharedSequence.swift */,
 				C83508E91C38706D0027C24C /* RuntimeStateSnapshot.swift */,
 				C83508EA1C38706D0027C24C /* RXObjCRuntime+Testing.h */,
 				C83508EB1C38706D0027C24C /* RXObjCRuntime+Testing.m */,
@@ -1848,12 +1841,17 @@
 				C83508EF1C38706D0027C24C /* RxTest-tvOS-Bridging-Header.h */,
 				C8B290841C94D55600E923D0 /* RxTest+Controls.swift */,
 				C83508F01C38706D0027C24C /* SentMessageTest.swift */,
+				C8D970E11F532FD20058F2FE /* SharedSequence+Extensions.swift */,
+				C8D970E21F532FD30058F2FE /* SharedSequence+OperatorTest.swift */,
+				C8D970DD1F532FD10058F2FE /* SharedSequence+Test.swift */,
+				C8D970DC1F532FD10058F2FE /* Signal+Test.swift */,
+				C8D970DF1F532FD20058F2FE /* TestImplementations */,
 				C8C4F1681DE9D48F00003FA7 /* UIActivityIndicatorView+RxTests.swift */,
 				C8C4F16A1DE9D4C100003FA7 /* UIAlertAction+RxTests.swift */,
 				C8C4F15C1DE9CAEE00003FA7 /* UIBarButtonItem+RxTests.swift */,
 				C8379EF31D1DD326003EF8FC /* UIButton+RxTests.swift */,
-				C8802DD31F8CD47F001D677E /* UIControl+RxTests.swift */,
 				C8C217D61CB710200038A2E6 /* UICollectionView+RxTests.swift */,
+				C8802DD31F8CD47F001D677E /* UIControl+RxTests.swift */,
 				C8C4F16C1DE9D4F400003FA7 /* UIDatePicker+RxTests.swift */,
 				C8C4F1641DE9D3FB00003FA7 /* UIGestureRecognizer+RxTests.swift */,
 				C8C4F1601DE9CD1600003FA7 /* UILabel+RxTests.swift */,
@@ -1878,9 +1876,6 @@
 				C8F27DB11CE6711600D5FB4F /* UITextView+RxTests.swift */,
 				C83508F11C38706D0027C24C /* UIView+RxTests.swift */,
 				271A97421CFC99FE00D64125 /* UIViewController+RxTests.swift */,
-				4613456E1D9A4467001ABAF2 /* UIWebView+RxTests.swift */,
-				C8A81CA51E05EAF70008DEF4 /* Binder+Tests.swift */,
-				6B9CA56D202A1F96002C2D11 /* KeyPathBinder+RxTests.swift */,
 			);
 			path = RxCocoaTests;
 			sourceTree = "<group>";
@@ -2160,7 +2155,6 @@
 				54D2138C1CE081890028D5B4 /* UINavigationItem+Rx.swift */,
 				844BC8B31CE4FD7500F5C7CB /* UIPickerView+Rx.swift */,
 				46307D4D1CDE77D800E47A1C /* UIAlertAction+Rx.swift */,
-				461345701D9A4543001ABAF2 /* UIWebView+Rx.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -2895,7 +2889,6 @@
 				C83E39822189066F001F4F0E /* NSSlider+Rx.swift in Sources */,
 				844BC8B41CE4FD7500F5C7CB /* UIPickerView+Rx.swift in Sources */,
 				C89AB20E1DAAC3350065FBE6 /* Logging.swift in Sources */,
-				461345711D9A4543001ABAF2 /* UIWebView+Rx.swift in Sources */,
 				C83E39802189066F001F4F0E /* NSControl+Rx.swift in Sources */,
 				C8093EE31B8A732E0088E94D /* DelegateProxyType.swift in Sources */,
 				C8093EFD1B8A732E0088E94D /* RxTarget.swift in Sources */,
@@ -3133,7 +3126,6 @@
 				C898147E1E75AD380035949C /* PrimitiveSequenceTest+zip+arity.swift in Sources */,
 				C8C4F1631DE9D0A800003FA7 /* UIProgressView+RxTests.swift in Sources */,
 				C8A81CA61E05EAF70008DEF4 /* Binder+Tests.swift in Sources */,
-				4613456F1D9A4467001ABAF2 /* UIWebView+RxTests.swift in Sources */,
 				C820A9BA1EB5097700D431BC /* Observable+TakeTests.swift in Sources */,
 				C835094C1C38706E0027C24C /* AssumptionsTest.swift in Sources */,
 				6B9CA56E202A206A002C2D11 /* KeyPathBinder+RxTests.swift in Sources */,
